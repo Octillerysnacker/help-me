@@ -1,25 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+let gameMode = "pairing";
+let topCount = 8;
+let bottomCount = 8;
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="container">
+      <div class="top-container">
+        {
+          new Array(topCount).fill(0).map((item, i) => {
+            return <div class="top-item">{i}</div>
+          })
+        }
+      </div>
+      <div class="bottom-container">
+        {
+          new Array(bottomCount).fill(0).map((item, i) => {
+            return <div class="bottom-item">
+              <div class="turkish">turkish {i}</div>
+              <div class="drax">drax {i}</div>
+            </div>
+          })
+        }
+      </div>
     </div>
   );
 }
-
-export default App;

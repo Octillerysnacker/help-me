@@ -1,38 +1,49 @@
-.App {
+.top-item {
+  width: 48%;
+  background-color: aqua;
   text-align: center;
+  box-sizing: border-box;
+  margin: 1%;
+  height: 20%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: greenyellow;
+  flex: 1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bottom-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 1;
+  background-color: aquamarine;
 }
-
-.App-link {
-  color: #61dafb;
+.bottom-item {
+  display: flex;
+  flex-direction: row;
+  height: 12.5%;
+  /* border: red solid 3px; */
+  box-sizing: border-box;
+  /* width: 100%; */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.turkish {
+  width: 48%;
+  text-align: center;
+  margin: 1%;
+  background-color: orange;
+  font-size: 110%;
+}
+.drax {
+  width: 48%;
+  margin: 1%;
+  text-align: center;
+  background-color: purple;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  height: 100vh;
+  width: 100vw;
 }
