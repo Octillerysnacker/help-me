@@ -3,14 +3,17 @@ import './App.css';
 
 let gameMode = "pairing";
 let topCount = 8;
-let bottomCount = 8;
+let bottomCount = 7;
 export default function App() {
   return (
     <div class="container">
       <div class="top-container">
         {
           new Array(topCount).fill(0).map((item, i) => {
-            return <div class="top-item">{i}</div>
+            return <div class="top-item">
+              <div class="top-content">{i}
+              </div>
+            </div>
           })
         }
       </div>
