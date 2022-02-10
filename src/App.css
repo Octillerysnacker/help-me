@@ -3,20 +3,20 @@
   background-color: aqua;
   text-align: center;
   box-sizing: border-box;
-  margin: 1%;
-  height: 20%;
+  height: 21%;
+  margin: auto;
 }
 .top-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: greenyellow;
-  flex: 1;
+  height: 50%;
 }
 .bottom-container {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  height: 50%;
   background-color: aquamarine;
 }
 .bottom-item {
@@ -30,15 +30,17 @@
 .turkish {
   width: 48%;
   text-align: center;
-  margin: 1%;
+  margin: 1% 1%;
   background-color: orange;
   font-size: 110%;
+  margin: auto;
 }
 .drax {
   width: 48%;
-  margin: 1%;
+  margin: 1% 1%;
   text-align: center;
   background-color: purple;
+  margin: auto;
 }
 .container {
   display: flex;
